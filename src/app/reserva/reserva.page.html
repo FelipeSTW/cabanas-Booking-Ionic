@@ -1,0 +1,64 @@
+
+<ion-content [fullscreen]="true">
+    <ion-header>
+      <ion-toolbar>
+        <div id="titulo">
+          <p>Reserva</p>
+        </div>
+      </ion-toolbar>
+    </ion-header>
+    
+      <ion-item>
+        <ion-label position="floating">Nombre completo</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Numero de contacto</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Correo</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Seleccione Fecha</ion-label>
+        <ion-datetime></ion-datetime>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Confirme su cabaña</ion-label>
+        <ion-select>
+          <ion-select-option value="">Cabaña N°1</ion-select-option>
+          <ion-select-option value="nes">Cabaña N°2</ion-select-option>
+          <ion-select-option value="n64" selected>Cabaña N°3</ion-select-option>
+          <ion-select-option value="ps">Cabaña N°4</ion-select-option>
+          <ion-select-option value="genesis">Cabaña N°5</ion-select-option>
+          <ion-select-option value="saturn">Cabaña N°6</ion-select-option>
+        </ion-select>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label>Acompañantes</ion-label>
+        <ion-toggle slot="end"></ion-toggle>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Numero de acompañantes</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label>Aceptar terminos y condiciones</ion-label>
+        <ion-checkbox slot="start"></ion-checkbox>
+      </ion-item>        
+  
+  </ion-content>
+  
+  <ion-footer class="ver"> 
+      <ion-button color="secondary" routerLink="/home"   >
+        <ion-icon name="chevron-back-outline"></ion-icon><p class="vol">volver</p>     
+       </ion-button>
+    <ion-button color="secondary" routerLink="/home"   >
+   <p class="ver">guardar</p> <ion-icon  name="chevron-forward-outline"></ion-icon>    
+  </ion-button>
+</ion-footer>

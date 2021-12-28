@@ -1,0 +1,45 @@
+<ion-header>
+    <ion-toolbar>
+      <div id="titulo">
+        <p>Ingreso</p>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-card-header>
+ 
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formularioLogin">
+        <ion-item>
+          <ion-label position="floating">Nombre</ion-label>
+          <ion-input formControlName="nombre"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input formControlName="password" type="password"></ion-input>
+        </ion-item>
+      </form>
+      <br>
+      <ion-button color="secondary" expand="block"(click)="ingresar()">
+        Ingresar
+      </ion-button>
+
+          <div id="link">
+            <a rel="noopener noreferrer" href="/no hay nada">¿Olvido su contraseña?</a>
+          </div>
+          <div id="linkregistro">
+          <a rel="noopener noreferrer" href="/registro">Registrate aquì</a>
+          </div>
+    </ion-card-content>
+  </ion-content>
+  
+  <ion-footer class="ver">
+    <ion-toolbar>
+      <ion-button color="transparent"  routerLink="/home"   >
+        <ion-icon name="chevron-back-outline"></ion-icon><p class="vol">volver</p>     
+       </ion-button>
+    </ion-toolbar>
+  </ion-footer>
+  

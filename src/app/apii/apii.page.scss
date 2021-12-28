@@ -1,0 +1,30 @@
+#titulo{
+    text-align: center;
+    font-family: "Ephesis";
+    font-weight:bold;
+    font-size:35px;
+    margin:0;
+    padding:0;
+  }
+  
+  ion-card-title {
+    font-weight:bold;
+    font-family: "Ephesis";
+    font-size:25px;
+  }
+  
+  @font-face {
+   
+    font-family: 'Ephesis';
+  
+  
+    src: url('/assets/fonts/Ephesis-Regular.ttf');
+  
+  
+  }
+
+  ion-list {
+      background: transparent;
+      color: black;
+      padding: 65px;
+  }

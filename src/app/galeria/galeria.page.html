@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+      <div id="titulo">
+          <p>Cabaña 1</p>
+        </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-card >  
+    <ion-card-content >
+      <div *ngFor="let imagen of imagenes">
+        <img class="galeria" src="assets/Galeria/cab1/{{imagen}}"  >
+      </div>
+      <ion-footer class="ver"> 
+          <ion-button color="secondary" routerLink="/home"   >
+            <ion-icon name="chevron-back-outline"></ion-icon><p class="vol">volver</p>     
+           </ion-button>
+        <ion-button color="secondary" routerLink="/reserva"   >
+       <p class="ver">Reservar</p> <ion-icon  name="chevron-forward-outline"></ion-icon>    
+      </ion-button>
+   </ion-footer>
+    </ion-card-content>
+    </ion-card>
+</ion-content>

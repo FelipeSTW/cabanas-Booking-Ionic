@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+  <div id="titulo">
+    <p>Usuarios</p>
+  </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+ 
+    <button ion-item *ngFor="let usuario of usuarios"> 
+     <ion-list>
+    {{usuario.id}} - {{usuario.name}} - {{usuario.email}} 
+    </ion-list>
+    </button>
+  
+  
+
+</ion-content>
